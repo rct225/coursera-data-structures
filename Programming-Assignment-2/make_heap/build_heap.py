@@ -17,7 +17,7 @@ class myHeap:
             self.siftDown(i)
 
     def parent(self, i):
-        return math.floor(i // 2)
+        return math.floor(i - 1 // 2)
 
     def leftChild(self, i):
         return 2 * i + 1
